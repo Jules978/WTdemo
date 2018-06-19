@@ -1,0 +1,44 @@
+setup
+
+alles in eigen file
+
+in dezelfde file op dezelfde regel een verandering MERGECONFLICT
+
+  506  git init
+  507  git add .
+  508  git commit -am "tekst a"
+  509  git remote add origin https://github.com/FelixvL/multigit.git
+  510  git push
+  511  git push --set-upstream origin master
+		^^^FOUNDER
+
+  513  git clone https://github.com/FelixvL/multigit.git
+  517  git status
+  519  git checkout -b branchfeatureFelix
+  521  git add .
+  522  git commit -am "letsgo"
+		^^^NIEUWE BRANCH
+
+  533  git checkout master
+  534  git pull
+  535  git checkout branchfeatureFelix
+  536  git merge master
+  537  git push
+	>>>>>	PULL REQUEST
+
+  540  git checkout master
+  541  git pull
+  542  git checkout branchfeatureFelix
+  543  git merge master
+  544  git status
+  545  git add .
+  546  git commit -am "tekst"
+  547  git push
+  548  git checkout master
+  549  git pull
+  550  git checkout branchfeatureFelix
+  551  git merge master
+  552  git push
+  553  git checkout master
+  554  git pull
+  555  history
